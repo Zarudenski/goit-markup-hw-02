@@ -19,6 +19,10 @@ body {
   text-decoration: none;
   font-size: 14px;
 }
+ul {
+  list-style: none; /* Ubrat tochki */
+}
+
 /* Seite nav */
 .shapka-logo {
   font-family: var(--secondary-font);
@@ -88,6 +92,7 @@ body {
 /* vajno */
 .vajno-subtitle {
   color: var(--primery-title-color);
+  font-size: 14px;
   font-weight: 700;
   line-height: 1.14;
   text-transform: uppercase;
@@ -125,7 +130,7 @@ body {
   text-align: center;
 }
 /* Stranica */
-.page-filters-btn {
+.page-filters-knopka {
   background-color: var(--third-bg-color);
   color: var(--primery-title-color);
   cursor: pointer;
@@ -134,8 +139,8 @@ body {
   line-height: 1.63;
   text-align: center;
 }
-.page-filters-btn:hover,
-.page-filters-btn:focus {
+.page-filters-knopka:hover,
+.page-filters-knopka:focus {
   background-color: var(--accent-color);
   color: var(--primery-white-color);
 }
@@ -177,17 +182,25 @@ body {
   font-style: normal;
 }
 .podval-address {
-  color: rgba(255, 255, 255, 0, 6);
-  line-height: 24px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71x;
+  letter-spacing: 0.03em;
+  color: var(--primery-white-color);
+  text-decoration: none;
 }
 .podval-mail,
 .podval-tel {
-  color: var(--primery-text-color);
-  font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
   text-decoration: none;
+
+  color: rgba(255, 255, 255, 0.6);
 }
+.podval-address:hover,
+.podval-address:focus,
 .podval-mail:hover,
 .podval-mail:focus,
 .podval-tel:hover,
