@@ -1,125 +1,116 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DZ Module 2</title>
+    <title>Document</title>
+   <!--без маркеров-->
+   <style>
+        li{
+            list-style: none;
+        }
+    </style>
+    <!--Основные шрифты-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-        rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <!--Ссылка на css-->
     <link rel="stylesheet" href="./css/styles.css">
 </head>
-
 <body>
-    <header class="shapka">
-        <nav class="nav">
-            <a href="./index.html" lang="en" class="shapka-logo"><span class="shapka-logo-first-part">Web</span><span
-                    class="shapka-logo-second-part">Studio</span></a>
-            <ul class="nav-list">
-                <li class="nav-item"><a href="./index.html" class="nav-item-link current">Студия</a></li>
-                <li class="nav-item"><a href="./portfolio.html" class="nav-item-link">Портфолио</a></li>
-                <li class="nav-item"><a href="#podvalcontacti" class="nav-item-link">Контакты</a></li>
+    <!--Header-->
+    <header class="header">
+         <a class="header-link" href="webstudio"><span class="header-link-txt">Web</span>Studio</a>
+          <nav class="nav">
+               <ul class="nav-list">
+                   <li class="nav-item" ><a class="nav-link" href="#">Cтудия</a></li>
+                   <li class="nav-item" ><a class="nav-link" href="./portfolio.html">Портфолио</a></li>
+                   <li class="nav-item" ><a class="nav-link" href="#">Контакты</a></li>
+               </ul>
+          </nav>
+          <!--Посилання на адресу електронної пошти та телефон-->
+                <ul class="header-contacts">
+                    <li class="header-item"><a class="header-mail" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                    <li class="header-item"><a class="header-phone" href="tel:+380961111111">+38 096 111 11 11</a></li>
+                </ul>
+    </header>                 
+    
+    <!--Main content-->
+     <main>
+         <!--Эффективные решения для вашего бизнеса-->
+          <section class="efectdecision" >
+              <h1 class="efectdecision-title" >ЭФФЕКТИВНЫЕ РЕШЕНИЯ ДЛЯ ВАШЕГО БИЗНЕСА</h1>
+                 <button class="efectdecision-button" type="button">Заказать услугу</button>
+          </section>
+
+          <!--Качества-->
+          <section class="quality">
+              <ul class="quality-list">
+                  <li class="quality-item">
+                      <h3 class="quality-subtitle">ВНИМАНИЕ К ДЕТАЛЯМ</h3>
+                      <p class="quality-text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
+                  </li>
+                  <li class="quality-item">
+                      <h3 class="quality-subtitle">ПУНКТУАЛЬНОСТЬ</h3>
+                      <p class="quality-text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
+                  </li>
+                  <li class="quality-item">
+                      <h3 class="quality-subtitle">ПЛАНИРОВАНИЕ</h3>
+                      <p class="quality-text">Равным образом констультация с широким активом в значительной степени обуславливает</p>
+                  </li>
+                  <li class="quality-item">
+                      <h3 class="quality-subtitle">СОВРЕМЕННЫЕ ТЕХНОЛОГИИ</h3>
+                      <p class="quality-text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
+                  </li>
             </ul>
-        </nav>
-        <ul class="nav-contact">
-            <li class="nav-contact-item"><a href="mailto:info@devstudio.com"
-                    class="nav-contact-mail">info@devstudio.com</a></li>
-            <li class="nav-contact-item"><a href="tel:+380961111111" class="nav-contact-tel">+38 096 111 11 11</a>
-            </li>
-        </ul>
-    </header>
-
-    <main>
-        <!--Hero-->
-        <section class="hero">
-            <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-            <button type="button" class="hero-btn">Заказать услугу</button>
-        </section>
-
-        <!--Nam vajno-->
-        <section class="vajno">
-            <h2 hidden class="vajno-title">Особенности</h2>
-            <ul class="vajno-list">
-                <li class="vajno-item">
-                    <h3 class="vajno-subtitle">Внимание к деталям</h3>
-                    <p class="vajno-item-text">Идейные соображения, а также начало повседневной работы по формированию
-                        позиции.</p>
-                </li>
-                <li class="vajno-item">
-                    <h3 class="vajno-subtitle">Пунктуальность</h3>
-                    <p class="vajno-item-text">Задача организации, в особенности же рамки и место обучения кадров влечет
-                        за собой.</p>
-                </li>
-                <li class="vajno-item">
-                    <h3 class="vajno-subtitle">Планирование</h3>
-                    <p class="vajno-item-text">Равным образом консультация с широким активом в значительной степени
-                        обуславливает.</p>
-                </li>
-                <li class="vajno-item">
-                    <h3 class="vajno-subtitle">Современные технологии</h3>
-                    <p class="vajno-item-text">Значимость этих проблем настолько очевидна, что реализация плановых
-                        заданий.</p>
-                </li>
-            </ul>
-        </section>
-
-        <!--Product-->
-        <section class="product">
-            <h2 class="product-title">Чем мы занимаемся</h2>
-            <ul class="product-list">
-                <li class="product-item"><img src="./images/komp.jpg" alt="работа на компьютере" width="370"
-                        height="294" class="product-item-img"></li>
-                <li class="product-item"><img src="./images/telefone.jpg" alt="работа на телефоне" width="370"
-                        height="294" class="product-item-img"></li>
-                <li class="product-item"><img src="./images/planset.jpg" alt="работа на планшете" width="370"
-                        height="294" class="product-item-img"></li>
-            </ul>
-        </section>
-
-        <!--Nasha komanda-->
-        <section class="team">
-            <h2 class="team-title">Наша команда</h2>
-            <ul class="team-list">
-                <li class="team-item">
-                    <img src="./images/igor.jpg" alt="Фото Игорь" width="270" height="270" class="teammate-photo">
-                    <h3 class="teammate-name">Игорь Демьяненко</h3>
-                    <p class="teammate-major">Product Designer</p>
-                </li>
-                <li>
-                    <img src="./images/olga.jpg" alt="Фото Ольга" width="270" height="270" class="teammate-photo">
-                    <h3 class="teammate-name">Ольга Репина</h3>
-                    <p class="teammate-major">Frontend Developer</p>
-                </li>
-                <li>
-                    <img src="./images/nikolai.jpg" alt="Фото Николай" width="270" height="270" class="teammate-photo">
-                    <h3 class="teammate-name">Николай Тарасов</h3>
-                    <p class="teammate-major">Marketing</p>
-                </li>
-                <li>
-                    <img src="./images/mihail.jpg" alt="Фото Михаил" width="270" height="270" class="teammate-photo">
-                    <h3 class="teammate-name">Михаил Ермаков</h3>
-                    <p class="teammate-major">UI Designer</p>
-                </li>
-            </ul>
-        </section>
-
-    </main>
-
-    <footer id="podvalcontacti" class="podval">
-        <a href="./index.html" lang="en" class="podval-logo"><span class="podval-logo-first-part">Web</span><span
-                class="podval-logo-second-part">Studio</span></a>
-        <address class="podval-contacts">
-            <ul class="podval-list">
-                <li><a href="https://goo.gl/maps/nJ7cFGeeHUBxhhn68"target="_blank" rel="noopener noreferrer" class="podval-address">г. Киев, пр-т Леси Украинки, 26</a></li>
-                <li><a href="mailto:info@devstudio.com" class="podval-mail">info@devstudio.com</a></li>
-                <li><a href="tel:+380961111111" class="podval-tel">+38 096 111 11 11</a></li>
-            </ul>
-        </address>
-    </footer>
+          </section>
+          <!--Чем мы занимаемся-->
+          <section class="whatwedo">
+               <h2 class="secondtitle">Чем мы занимаемся</h2>
+                  <ul class="whatwedo-list">
+                       <li class="whatwedo-item"><img class="whatwedo-image" src="./images/box 1.jpg" alt="технології1" width="370" height="294"></li> 
+                       <li class="whatwedo-item"><img class="whatwedo-image" src="./images/box2.jpg" alt="технології2" width="370" height="294"></li> 
+                       <li class="whatwedo-item"><img class="whatwedo-image" src="./images/box3.jpg" alt="технології3" width="370" height="294"></li> 
+                  </ul>
+          </section>       
+           <!--Наша команда-->
+           <section class="comand">
+               <h2 class="secondtitle">Наша команда</h2>
+                  <ul class="comand-list">
+                      <li class="comand-item">
+                          <img class="comand-image" src="./images/igordemianenko.jpg" alt="Игорь Демьяненко" width="270" height="260">
+                          <h3 class="comand-subtitle">Игорь Демьяненко</h3>
+                          <p class="comand-text" lang="en">Product Designer</p>
+                      </li> 
+                      <li class="comand-item">    
+                          <img class="comand-image" src="./images/olgarepina.jpg"     alt="Ольга Репина" width="270" height="260">
+                          <h3 class="comand-subtitle">Ольга Репина</h3>
+                          <p class="comand-text" lang="en">Frontend Developer</p>
+                      </li>
+                      <li class="comand-item">  
+                          <img class="comand-image" src="./images/nikolaitarasov.jpg" alt="Николай Тарасов" width="270" height="260">
+                          <h3 class="comand-subtitle">Николай Тарасов</h3>
+                          <p class="comand-text" lang="en">Marketing</p>
+                      </li>
+                      <li class="comand-item">   
+                          <img class="comand-image" src="./images/michailermakov.jpg" alt="Михаил Ермаков" width="270" height="260">
+                          <h3 class="comand-subtitle">Михаил Ермаков</h3>
+                          <p class="comand-text" lang="en">UI Designer</p>
+                      </li>
+                  </ul>
+           </section>       
+      </main>
+      <!--Footer-->
+      <footer class="footer">
+        <a class="footer-link" href="webstudio"><span class="footer-txt">Web</span>Studio</a>
+                <address class="footer-address">
+                    <p class="footer-addresstext">г.Киев, пр-т Леси Украинки, 26</p>
+                </address>
+                <ul class="footer-list">
+                    <li class="footer-item"><a class="footer-mail" href="mailto:info@example.com"><span>info@example.com</span></a></li>
+                    <li class="footer-item"><a class="footer-phone" href="tel:+380991111111">+38 099 111 11 11</a></li>
+                 </ul>
+      </footer>
 </body>
-
 </html>
